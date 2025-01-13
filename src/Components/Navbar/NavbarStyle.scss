@@ -1,0 +1,13 @@
+@import '../../_variables.scss';
+nav{
+    .nav-item{
+        width: fit-content;
+    }
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+background-color: $bg-secound-color;
+}
+
+.navbar-brand{
+    font-size: 32px !important;
+}

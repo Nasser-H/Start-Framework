@@ -1,0 +1,23 @@
+.form-control {
+    border-top: none;
+    border-right : none;
+    border-left : none;
+    border-bottom: 1px solid #0000001a;
+    position: relative;
+}
+.form-control:focus {
+    background-color: white;
+    border-bottom: 1px solid #0000001a;
+    outline: none ;
+    box-shadow: none;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1ABC9C;
+    --bs-btn-border-color: #1ABC9C;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1ABC9C;
+    --bs-btn-hover-border-color: #1ABC9C;
+    --bs-btn-active-bg: #1ABC9C;
+    --bs-btn-active-border-color: none;
+}

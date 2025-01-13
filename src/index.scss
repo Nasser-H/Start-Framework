@@ -1,0 +1,56 @@
+@import './_variables.scss';
+.bg-main-color{
+background-color: $bg-main-color;
+}
+.text-main-color{
+color: $text-main-color;
+}
+.bg-secound-color{
+    background-color: $bg-secound-color;
+}
+.bg-footer-color{
+    background-color: $bg-footer-color;
+}
+.main-text-wight{
+    font-weight: 700;
+}
+@mixin hr($pos){
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc($pos - 40px);
+    width: 80px;
+    height: 4px;
+    background-color: white;
+}
+@mixin hr2($pos){
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc($pos - 40px);
+    width: 80px;
+    height: 4px;
+    background-color: $bg-main-color;
+}
+.hr{
+    width: 389px;
+    margin-inline: auto;
+    position: relative;
+    &::before{
+        @include hr(34%)
+    }
+    &::after{
+        @include hr(66%)
+    }
+}
+.hr2{
+    width: 389px;
+    margin-inline: auto;
+    position: relative;
+    &::before{
+        @include hr2(34%)
+    }
+    &::after{
+        @include hr2(66%)
+    }    
+}

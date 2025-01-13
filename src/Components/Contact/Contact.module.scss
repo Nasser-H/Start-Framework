@@ -1,0 +1,14 @@
+@import '../../_variables.scss';
+$label-color: #1abc9c;
+.label{
+    color: $label-color;
+    position: relative;
+    top: 50%;
+    transition: all 0.5s;
+}
+.openLabel{
+    top: 0;
+}
+.contatBage{
+    margin-top: $margin-for-navbar;
+}
